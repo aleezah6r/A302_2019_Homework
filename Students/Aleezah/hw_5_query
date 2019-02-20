@@ -1,0 +1,7 @@
+select top 5
+    z, ra, dec, bestObjID
+from
+    specObj
+where
+    (class = 'qso')
+    and ra BETWEEN 140 and 141 and dec BETWEEN 20 and 21
