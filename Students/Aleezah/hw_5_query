@@ -1,7 +1,9 @@
 select top 5
-    z, ra, dec, bestObjID
+    bestObjID, ra, dec, z
 from
     specObj
 where
     (class = 'qso')
-    and ra BETWEEN 140 and 141 and dec BETWEEN 20 and 21
+    and ra < 182 and ra > 178 
+    and dec < 62 and dec > 58
+order by 'z' desc
